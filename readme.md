@@ -5,15 +5,24 @@
 ### 1. Conociendo el Lenguaje
 #### 1.1 Variables
 
-```vb
-Dim texto1 as string
+```vb.net
+Dim texto1 as String
 
-Dim texto2 as string = ""
+Dim texto2 as String = ""
 
-Dim num1, num2, num3 as integer
+Dim num1, num2, num3 as Integer
 ```
 
 #### 1.2 Estructuras de control
+
+```vb.net
+If var1 = var2 Then
+  ...
+Else
+  ...
+End If
+```
+
 #### 1.4 Funciones y métodos
 #### 1.5 Namespaces
 #### 1.6 Manejo de excepciones
