@@ -53,6 +53,7 @@ End If
 ##### 1.2.2 Select Case
 
 ```vb.net
+Dim var1 As Integer = 4
 Select Case var1
   Case 1 To 5
     ...
@@ -63,37 +64,78 @@ Select Case var1
 End Select
 ```
 
-##### 1.2.2 Do .. While
+##### 1.2.2 Do While
 
 ```vb.net
-While var1 = True
-  ...
-  ...
-Wend
+Dim i As Integer = 0
+Dim Letras() As String = {"A", "D", "E", "K", "P"}
+Do While i < Contactos.Length
+  Console.WriteLine(Letras(i))
+  i = i + 1
+Loop
 ```
 
-##### 1.2.3 Do .. Until
+##### 1.2.3 Do Until
 
 ```vb.net
+Dim i As Integer = 0
+Dim Letras() As String = {"A", "D", "E", "K", "P"}
+Do Until i = Contactos.Length
+  Console.WriteLine(Letras(i))
+  i = i + 1
+Loop
+```
+
+##### 1.2.4 While
+
+```vb.net
+Dim i As Integer = 0
+Dim Letras() As String = {"A", "D", "E", "K", "P"}
+While i < Contactos.Length
+  Console.WriteLine(Letras(i))
+  i = i + 1
+End While
+```
+
+##### 1.2.5 Do .. Loop Until
+
+```vb.net
+Dim i As Integer = 0
+Dim Letras() As String = {"A", "D", "E", "K", "P"}
 Do
-  ...
-  ...
-Until var1 = True
+  Console.WriteLine(Contactos(i))
+  i = i + 1
+Loop Until i = Letras.Length
 ```
 
-##### 1.2.4 For .. To
+##### 1.2.6 Do .. Loop While
 
 ```vb.net
-For i As Integer = 0 To 10
-  ...
+Dim i As Integer = 0
+Dim Letras() As String = {"A", "D", "E", "K", "P"}
+Do
+  Console.WriteLine(Letras(i))
+  i = i + 1
+Loop While i < Letras.Length
+```
+
+##### 1.2.7 For
+
+```vb.net
+Dim i As Integer = 0
+Dim Letras() As String = {"A", "D", "E", "K", "P"}
+For i = 0 To Letras.Length - 1
+  Console.WriteLine(Letras(i))
 Next
 ```
 
-##### 1.2.5 For Each .. In
+##### 1.2.8 For Each
 
 ```vb.net
-For Each obj As Object In lista
-  ...
+Dim i As Integer = 0
+Dim Letras() As String = {"A", "D", "E", "K", "P"}
+For Each Letra As String In Contactos
+  Console.WriteLine(Letra)
 Next
 ```
 
