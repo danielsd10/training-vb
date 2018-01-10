@@ -69,7 +69,7 @@ End Select
 ```vb.net
 Dim i As Integer = 0
 Dim Letras() As String = {"A", "D", "E", "K", "P"}
-Do While i < Contactos.Length
+Do While i < Letras.Length
   Console.WriteLine(Letras(i))
   i = i + 1
 Loop
@@ -80,7 +80,7 @@ Loop
 ```vb.net
 Dim i As Integer = 0
 Dim Letras() As String = {"A", "D", "E", "K", "P"}
-Do Until i = Contactos.Length
+Do Until i = Letras.Length
   Console.WriteLine(Letras(i))
   i = i + 1
 Loop
@@ -91,7 +91,7 @@ Loop
 ```vb.net
 Dim i As Integer = 0
 Dim Letras() As String = {"A", "D", "E", "K", "P"}
-While i < Contactos.Length
+While i < Letras.Length
   Console.WriteLine(Letras(i))
   i = i + 1
 End While
@@ -103,7 +103,7 @@ End While
 Dim i As Integer = 0
 Dim Letras() As String = {"A", "D", "E", "K", "P"}
 Do
-  Console.WriteLine(Contactos(i))
+  Console.WriteLine(Letras(i))
   i = i + 1
 Loop Until i = Letras.Length
 ```
@@ -132,9 +132,8 @@ Next
 ##### 1.2.8 For Each
 
 ```vb.net
-Dim i As Integer = 0
 Dim Letras() As String = {"A", "D", "E", "K", "P"}
-For Each Letra As String In Contactos
+For Each Letra As String In Letras
   Console.WriteLine(Letra)
 Next
 ```
